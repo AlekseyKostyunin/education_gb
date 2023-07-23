@@ -35,3 +35,7 @@ else if (a == 7)
 {
     Console.WriteLine($"{a} -> Воскресенье");
 }
+else 
+{
+    Console.WriteLine("Вы ввели некорректный номер");
+}
