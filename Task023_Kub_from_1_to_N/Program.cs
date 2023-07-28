@@ -54,7 +54,7 @@ static int GetNumberFromUser(string message, string errorMessage)
     }
 }
 
-// 02. Вычисление квадрата числа
+// 02. Вычисление куба числа
 static int GetKubN(int N)
 {
     return N*N*N;
