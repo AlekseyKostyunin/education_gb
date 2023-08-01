@@ -11,18 +11,18 @@ Console.Clear();
 int n = GetNumberFromUser("Введите пятизначное число: ", "Ошибка! Нужно ввести пятизначное число");
 
 // Решение
-string relult;
+string result;
 try
 {
-    relult = PolidromN(n);    
+    result = PolidromN(n);    
 }
 catch(Exception exc)
 {
     Console.WriteLine($"ОШИБКА! {exc.Message}");
     return;
 }
-
-Console.Write($"{n} -> {relult}");
+// Вывод результатов
+Console.Write($"{n} -> {result}");
 
 // Методы
 
