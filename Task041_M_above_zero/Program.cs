@@ -6,11 +6,37 @@
 
 Console.Clear();
 
-int[] array = new int[5] {6, 7, 19, 345, 3};
+// Запрашиваем у пользователя число М
+int m = GetNumberFromUser("Укажите количество вводимых чисел: ", "Ошибка! Введите целое число.");
 
-int a = GetNumberFromUser("Введите число: ", "Ошибка! Введите целое число.");
+// Получаем от пользователя M чисел и записываем их в массив
+int[] array = GetArray(m);
 
-Console.WriteLine($"{a}: Массив: {String.Join(" ", array)} -> {result}");
+// Считаем количество положительных чисел, введенных пользователем
+int result = GetPositive(array);
+
+// Выводим результат
+Console.WriteLine($"В массиву: {String.Join(" ", array)} -> {result} элемента(ов) больше 0");
+
+int[] GetArray(int n)
+{
+    int[] res = new int[n];
+    for (int i = 0; i < res.Length; i++)
+    {
+        res[i] = GetNumberFromUser("Введите целое число: ", "Ошибка! Введите целое число.");
+    }
+    return res;
+}
+
+int GetPositive(int[] inArr)
+{
+    int count = 0;
+    foreach (var item in inArr)
+    {
+        if (item > 0) count++;
+    }
+    return count;
+}
 
 int GetNumberFromUser(string message, string errorMessage)
 {
