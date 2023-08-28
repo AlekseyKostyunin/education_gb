@@ -23,7 +23,7 @@ PrintArray(array); // Выводим сформированный массив
 
 Console.WriteLine();
 
-double[] averageArrayR = GetAverageR(array); // Вормируем массив со средними значениями значений элементов столбцов массива
+double[] averageArrayR = GetAverageR(array); // Формируем массив со средними значениями значений элементов столбцов массива
 Console.Write($"Среднее арифметическое каждого столбца: "); 
 PrintArrayDouble(averageArrayR);
 
