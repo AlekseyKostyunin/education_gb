@@ -59,3 +59,4 @@ int GetNumberFromUser(string message, string errorMessage)
         Console.WriteLine(errorMessage);
     }
 }
+
