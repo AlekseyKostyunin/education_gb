@@ -5,15 +5,9 @@
 3 2 4 -> yes
 3 2 1 -> no
 '''
-
-print('Введите n долек: ')
-n = int(input())
-
-print('Введите m долек: ')
-m = int(input())
-
-print('Введите k долек: ')
-k = int(input())
+n = int(input('Введите n долек: '))
+m = int(input('Введите m долек: '))
+k = int(input('Введите k долек: '))
 
 if (k == n and k % m == 0) or (k == m and k % n == 0) or (k == m and n == 1) or (k == n and m == 1):
     print('YES')

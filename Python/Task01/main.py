@@ -10,9 +10,6 @@ Output:
 '''
 from math import ceil
 
-print('Введите число n (километры): ')
-n = int(input())
-print('Введите число m (километры): ')
-m = int(input())
-
+n = int(input('Введите число n (километры): '))
+m = int(input('Введите число m (километры): '))
 print(ceil(m / n)) # округление в большу сторону до целого
