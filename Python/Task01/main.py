@@ -8,8 +8,7 @@ m = 750
 Output:
 2
 '''
-from math import ceil
 
 n = int(input('Введите число n (километры): '))
 m = int(input('Введите число m (километры): '))
-print(ceil(m / n)) # округление в большу сторону до целого
+print(abs(-m // n))

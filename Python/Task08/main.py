@@ -5,11 +5,22 @@
 3 2 4 -> yes
 3 2 1 -> no
 '''
-n = int(input('Введите n долек: '))
-m = int(input('Введите m долек: '))
-k = int(input('Введите k долек: '))
+# n = int(input('Введите n долек: '))
+# m = int(input('Введите m долек: '))
+# k = int(input('Введите k долек: '))
 
-if (k == n and k % m == 0) or (k == m and k % n == 0) or (k == m and n == 1) or (k == n and m == 1):
-    print('YES')
+# if (k == n and k % m == 0) or (k == m and k % n == 0) or (k == m and n == 1) or (k == n and m == 1):
+#     print('YES')
+# else: 
+#     print('NO')
+
+# k < m*n and (k%m==0 or k%n==0)
+
+a = 3 
+b = 2
+c = 1
+
+if c < a*b and (c%a==0 or c%b==0):
+    print('yes')
 else: 
-    print('NO')
+    print('no')
