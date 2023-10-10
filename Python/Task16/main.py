@@ -26,3 +26,5 @@ print(count)
 #     numbers.append(int(input('Введите целое число: '))) 
 # x = int(input('Введите искомое число: '))
 # print(numbers.count(x))
+
+# print(list_1.count(k))
