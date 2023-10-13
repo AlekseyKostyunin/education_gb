@@ -9,12 +9,21 @@
 6 12
 '''
 
-n = int(input("Введите количество элементов первого множества: "))
-m = int(input("Введите количество элементов второго множества: "))
-a = set()
-b = set()
-for i in range(n):
-    a.add(int(input("Введите число: ")))
-for i in range(m):
-    b.add(int(input("Введите число: ")))
-print(*a.intersection(b))
+# n = int(input("Введите количество элементов первого множества: "))
+# m = int(input("Введите количество элементов второго множества: "))
+# a = set()
+# b = set()
+# for i in range(n):
+#     a.add(int(input("Введите число: ")))
+# for i in range(m):
+#     b.add(int(input("Введите число: ")))
+# print(*a.intersection(b))
+
+var1 = '5 4' # количество элементов первого и второго множества
+var2 = '1 3 5 7 9' # элементы первого множества через пробел
+var3 = '2 3 4 5' # элементы второго множества через пробел
+
+n, m = var1.split()
+a = set(var2.split())
+b = set(var3.split())
+print(*sorted(list(a.intersection(b))))
