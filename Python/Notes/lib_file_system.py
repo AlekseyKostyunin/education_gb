@@ -36,8 +36,7 @@ class FileSystemHandler:
     @classmethod
     def getContentsList(cls) -> list:
         contents_list = []
-        # for file_name in glob(os.getcwd() + "/**/*.json"):
-        for file_name in glob(os.getcwd() + ".json"):
+        for file_name in glob(os.getcwd() + "/Python/Notes/data/*.json"):
             with open(file_name, "r") as file:
                 file_contents = json.loads(file.read())
                 contents_list.append(file_contents)
