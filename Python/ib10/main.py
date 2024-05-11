@@ -1,3 +1,5 @@
+import hashlib
+
 def other_symbols(your_password):
     count_numbers = len([x for x in your_password if x.isdigit()])
     count_upper = len([x for x in your_password if x.isupper()])
@@ -17,7 +19,9 @@ def validator(your_password):
         return "Ваш пароль должен содержать строчные буквы."
     if other_symbols(your_password) == len(your_password):
         return "Ваш пароль должен содержать другие символы."
-    return your_password
+    hash_object = hashlib.sha256(your_password.encode())
+    hex_dig = hash_object.hexdigest()
+    return hex_dig
 
 def test():
     a = validator("Sword")
